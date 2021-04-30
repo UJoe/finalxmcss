@@ -1,0 +1,102 @@
+$orange:  rgb(255, 166, 0);
+$lgreen: turquoise;
+$dgreen: green;
+$white: #fff;
+
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+#ham {
+  position: fixed;
+  right: 30px;
+  top: 30px;
+  z-index: 10;
+}
+
+#hambi {
+  background-color: $dgreen;
+  border-radius: 50%;
+  padding: 20px;
+  border: solid 1px $white;
+  height: 100px;
+  width: 100px;
+  height: 80px;
+    width: 80px;
+}
+
+#main {
+  background-color: $orange;
+  width: 100%;
+  height: 100%;
+  min-width: 100vw;
+  min-height: 100vh;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  @media (max-width: 768px) {
+   overflow: auto;
+  }
+}
+
+.h1 {
+  color: $dgreen;
+  margin: 100px auto 0;
+  @media (max-width: 768px) {
+    margin: 120px 50px 0 auto;
+   }
+}
+
+input[type="text"] {
+  width: 50%;
+  height: 80px;
+  margin: 20px auto;
+  @media (max-width: 768px) {
+    width: 80%;
+  }
+}
+
+#privacy {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin: 0 10%;
+  
+  input[type="checkbox"] {
+    width: 1.2em;
+    height: 1.2em;
+    margin-bottom: 10px;
+  }
+  p {
+    margin-left: 20px;
+    font-size: 1.3em;
+    color: $dgreen;
+  }
+}
+
+
+input::placeholder {
+  color: $dgreen;
+  padding-left: 20px;
+  font-size: 1.2em;
+}
+
+button {
+  background-color: $lgreen;
+  color: $white;
+  border: solid 1px $white;
+  position: inline-block;
+  width: 40%;
+  height: 80px;
+  font-size: 1.5em;
+  margin: 30px auto 100px;
+  @media (max-width: 768px) {
+    height: 60px;
+    width: 70%;
+    margin-top: 20px;
+  }
+}

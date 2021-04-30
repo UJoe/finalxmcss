@@ -1,0 +1,143 @@
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+#ham {
+  position: fixed;
+  right: 30px;
+  top: 30px;
+  z-index: 10;
+}
+
+#hambi {
+  background-color: green;
+  border-radius: 50%;
+  padding: 20px;
+  border: solid 1px #fff;
+  height: 100px;
+  width: 100px;
+  height: 80px;
+  width: 80px;
+}
+
+#main {
+  background-color: #ffa600;
+  width: 100%;
+  height: 100%;
+  min-width: 100vw;
+  min-height: 100vh;
+  overflow: hidden;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+@media (max-width: 768px) {
+  #main {
+    overflow: auto;
+  }
+}
+
+.h1 {
+  color: green;
+  margin: 100px auto 0;
+}
+
+@media (max-width: 768px) {
+  .h1 {
+    margin: 120px 50px 0 auto;
+  }
+}
+
+input[type="text"] {
+  width: 50%;
+  height: 80px;
+  margin: 20px auto;
+}
+
+@media (max-width: 768px) {
+  input[type="text"] {
+    width: 80%;
+  }
+}
+
+#privacy {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 0 10%;
+}
+
+#privacy input[type="checkbox"] {
+  width: 1.2em;
+  height: 1.2em;
+  margin-bottom: 10px;
+}
+
+#privacy p {
+  margin-left: 20px;
+  font-size: 1.3em;
+  color: green;
+}
+
+input::-webkit-input-placeholder {
+  color: green;
+  padding-left: 20px;
+  font-size: 1.2em;
+}
+
+input:-ms-input-placeholder {
+  color: green;
+  padding-left: 20px;
+  font-size: 1.2em;
+}
+
+input::-ms-input-placeholder {
+  color: green;
+  padding-left: 20px;
+  font-size: 1.2em;
+}
+
+input::placeholder {
+  color: green;
+  padding-left: 20px;
+  font-size: 1.2em;
+}
+
+button {
+  background-color: turquoise;
+  color: #fff;
+  border: solid 1px #fff;
+  position: inline-block;
+  width: 40%;
+  height: 80px;
+  font-size: 1.5em;
+  margin: 30px auto 100px;
+}
+
+@media (max-width: 768px) {
+  button {
+    height: 60px;
+    width: 70%;
+    margin-top: 20px;
+  }
+}
+/*# sourceMappingURL=style.css.map */
